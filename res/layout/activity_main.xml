@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wifiaptest.MainActivity" >
+
+    <LinearLayout 
+        android:id="@+id/control_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        >"
+	    <Button 
+	        android:id="@+id/setup_ap"
+	        android:padding="5dp"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:textSize="15sp"
+	        android:text="打开热点"
+	        />
+	    <Button
+	        android:id="@+id/close_ap"
+	        android:padding="5dp"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:text="关闭热点"
+	        android:textSize="15sp"
+	        />
+	    <Button
+	        android:id="@+id/open_wifi"
+	        android:padding="5dp"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:text="打开wifi"
+	        android:textSize="15sp"
+	        />
+	    <Button
+	        android:id="@+id/close_wifi"
+	        android:padding="5dp"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:text="关闭wifi"
+	        android:textSize="15sp"
+	        />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/control_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        
+        android:orientation="horizontal"
+        android:layout_below="@id/control_layout1"
+        >"
+	    <Button 
+	        android:id="@+id/scan_wifi"
+	        android:padding="5dp"
+	        android:layout_width="wrap_content"
+	        
+	        android:layout_height="match_parent"
+	        android:textSize="15sp"
+	        android:text="搜索wifi"
+	        />
+
+    </LinearLayout>
+
+	<ListView
+	    android:id="@+id/wifi_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/control_layout2"
+	    />
+
+</RelativeLayout>
